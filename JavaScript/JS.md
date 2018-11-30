@@ -99,7 +99,7 @@ Functions in JS are special kind of objects, they can be stored in variables, re
 *Fucntion Expression*
 ```js
 let x = function a() {
-    console.log('Anonymous Function);
+    console.log('Anonymous Function');
 }
 
 // Function's reference is stored in variable x, calling a function declared using expression is same.  
