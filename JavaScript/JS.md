@@ -22,7 +22,7 @@ In *Browsers* we can execute JavaScript by attaching a script to webpage.
 
 
 *External Scripts*  
-```
+```js
 <script src="/path/to/script.js"></script>
 ```
 
@@ -81,7 +81,7 @@ if a function does not return any value, by default it is false. Functions are b
 Default Value for Arguements:  
 
 
-```
+```js
 function x(a = 2) {
     return a*2;
 }
@@ -97,7 +97,7 @@ After parsing before execution. Functions and variables(only var) get moved on t
 Functions in JS are special kind of objects, they can be stored in variables, returned from another function or can be passed as an arguement into another function.  
 
 *Fucntion Expression*
-```
+```js
 let x = function a() {
     console.log('Anonymous Function);
 }
@@ -109,7 +109,7 @@ x();
 **Arrow Functions**
 Shorthand to create functions, better than expression. 
 
-```
+```js
 let f1 = () => 5;
 let f2 = a => a;
 let f3 = (a,b) => a*b;
@@ -136,7 +136,7 @@ let u = new Object(); // Constructor Syntax
 let u = {} // equivalent to above expression, preferred way.  
 
 To create object with key-value pairs.  
-```
+```js
 let a = {
     x: 1,
     y: 2,
@@ -190,7 +190,7 @@ for (key in c) {
 
 Objects work **by Reference** and not **by Value** like in case of primitves.
 
-```
+```js
 const a = {};
 const b = 5;
 
@@ -206,7 +206,7 @@ Object.assign(dest, src1, src2);
 **Prototypal Inheritance**
 In JS, inheritance is supported through prototypes. Each object has \__proto__ property which points to an object and that object is seen as prototype (backup).
 
-```
+```js
 let a = {x: 1};
 let b = {y: 2};
 a.y // returns undefined but what if we can make 'b' object a's prototype
