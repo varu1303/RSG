@@ -16,7 +16,8 @@ In *Browsers* we can execute JavaScript by attaching a script to webpage.
 **SCRIPT** tag is used to attach JS. It can be included in any part of HTML document. The script tag contains JavaScript code which is automatically executed when the browser meets the tag.
 
 *Inline JS*  
-```<script type="text/javascript"> alert('Inline JS') </script>```  
+```js
+<script type="text/javascript"> alert('Inline JS') </script>```  
 
 
 *External Scripts*  
