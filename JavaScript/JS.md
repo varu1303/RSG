@@ -17,11 +17,14 @@ In *Browsers* we can execute JavaScript by attaching a script to webpage.
 
 *Inline JS*  
 ```js
-<script type="text/javascript"> alert('Inline JS') </script>```  
+<script type="text/javascript"> alert('Inline JS') </script>
+```  
 
 
 *External Scripts*  
-```<script src="/path/to/script.js"></script>```
+```
+<script src="/path/to/script.js"></script>
+```
 
 
 ### Variables
