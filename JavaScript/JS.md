@@ -230,8 +230,54 @@ for... loop to iterate over values
 a[0] a[1]  
 Pop, push
 
-**This, constructor function, Classes, Array Methods**
 
+
+### Array Methods  
+
+Makes code more readable, they don't mutate the data which is important while working with React.
+
+
+**.forEach**  
+Loops over all the items in an array and applies a function on them.  
+
+```js
+let a1 = [1, 4, 6, 7, 8];
+a1.forEach(item => console.log(item));
+```
+**.filter**  
+Creates a new array based on if items pass a certain condition.  
+
+```js
+let a2 = a1.filter((item, index) => item > 5);
+```  
+
+**.map**  
+Great for data manipulation. Takes an array and returns a manipulated value for each item of it.  
+
+```js
+let a3 = a1.map((item, index) => item * 2)
+```  
+
+**.reduce**  
+Reduces an array down to a single value.  
+
+```js
+let item = 0;
+let a4 = a1.reduce((accumulator, item) => item > accumulator ? item : accumulator);
+```  
+
+### Constructor Fucntion | Classes in JS  
+Any function in JS can be used to create objects by calling it with a *new* keywork.  
+
+```js
+function MakeObjects(name) {
+    this.name = name;
+}
+
+
+```
+
+**This, constructor function, Classes**  
 
 ### DOM API
 
