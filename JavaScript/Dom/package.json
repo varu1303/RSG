@@ -11,8 +11,7 @@
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "babel-compile": "babel react2.js --out-file dist/bundle.js --watch"
-
+    "babel-compile": "babel this.js --out-file dist/bundle.js --watch"
   },
   "author": "",
   "license": "ISC"

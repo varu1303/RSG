@@ -1,17 +1,15 @@
-"use strict";
-
 // THIS in JS
 
-var a = {
+let a = {
     x: 2,
-    f: function f() {
+    f: function() {
         console.log(this);
         // console.log(this.x);
 
         // let int = () => {
         //     console.log(this.x);
         // }
-        var self = this;
+        let self = this;
         function int() {
             console.log(self.x);
         }
@@ -20,14 +18,15 @@ var a = {
 
         // return int;
 
+
     }
-};
+}
 
-var b = {
+let b = {
     x: 3
-};
+}
 
-var fn = a.f;
+let fn = a.f;
 b.f = a.f;
 // a.f();
 // b.f();
@@ -37,8 +36,8 @@ setTimeout(b.f, 0);
 
 // bind call and apply
 
-var fn1 = a.f.bind(a);
-var fn2 = a.f.bind(b);
+let fn1 = a.f.bind(a);
+let fn2 = a.f.bind(b);
 
 fn1();
 // a1();
