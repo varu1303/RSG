@@ -66,7 +66,7 @@ class EHC extends React.Component { // LifeCycle Hooks
     // UPDATE PHASE: 2 branches
     // 1. When its own state is updated: shouldComponentUpdate componentWillUpdate render componentDidUpdate
     // 2. Parent gets updated : componentWillReceiveProps shouldComponentUpdate  componentWillUpdate render componentDidUpdate
-
+    // UMOUNT PHASE
     constructor(props) {
         super(props);
 

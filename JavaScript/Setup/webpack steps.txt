@@ -1,0 +1,17 @@
+npm init
+npm install webpack webpack-cli --save-dev
+
+
+var path = require('path');
+
+module.exports = {
+  mode: 'development',
+  entry: './foo.js',
+  output: {
+    path: path.resolve(__dirname, 'dist'),
+    filename: 'foo.bundle.js'
+  }
+};
+
+"build": "webpack --watch"
+npm rub build 
